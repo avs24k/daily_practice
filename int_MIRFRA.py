@@ -30,3 +30,20 @@ Output:
 #     for j in range(i,0,-1):
 #         print(j, end="")
 #     print()
+
+# try:
+#     result = 10/0
+# except ZeroDivisionError as error:
+#     print("error",error)
+
+
+
+
+
+
+
+
+
+
+
+

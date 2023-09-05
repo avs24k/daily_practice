@@ -178,9 +178,9 @@ of the first and last 5 elements where the values are square numbers between 1 a
 
 """22. Write a Python program to find the index of an item in a specified list.
 """
-#A = [1, 2, 3, 4, 5]
-# print(A.index(2))
-
+# A = [1, 2, 3, 4, 5]
+# # print(A.index(2))
+#
 # B = []
 # for i in range(len(A)):
 #     if A[i]== 4:
@@ -368,6 +368,11 @@ Expected Output: 113350"""
 # B = "".join(map(str,A))
 # print(B)
 
+# A = [11, 33, 50]
+# for i in A:
+#     print(i,end="")
+
+
 """40. Write a Python program to split a list based on the first character of a word.
 """
 
@@ -466,14 +471,14 @@ o/p=[[1,2,3,4,5],[6,7,8,9,10],[11,12,13,14,15]]
 """47. Write a Python program to insert an element before each element of a list.
 """
 
-# A = ["Avi","Patil","Ramesh"]
+A = ["Avi","Patil","Ramesh"]
 #
 # B = [j for i in A for j in ("C",i)]
 # print(B)
 #
-# for i in A:
-#     for j in ("C",i):
-#         print(j,end=",")
+for i in A:
+    for j in ("C",i):
+        print(j,end=",")
 
 
 """48. Write a Python program to print nested lists (each list on a new line) using the print() function.
@@ -673,9 +678,12 @@ Expected output : [40, 50, 60, 10, 20, 30]"""
 
 # A = [10, 20, 30]
 # B = [40, 50, 60]
-# # A[:0]=B
-# # print(A)
-# """----------------------"""
+# # # A[:0]=B
+# # # print(A)
+# # """----------------------"""
+# B.extend(A)
+# print(B)
+#
 # for i,j in zip(A,B):
 #     print(i,j,end=",")
 
@@ -787,5 +795,7 @@ List reflecting the run-length encoding from the said string:
 #         B[i]=1
 # print(B)
 #
+
+
 
 
