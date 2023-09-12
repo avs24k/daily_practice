@@ -64,7 +64,7 @@ the file,and then prints the last character of the file and the total count of u
 5) Reverse the string
 """
 
-#strng = "i love my India"
+# strng = "i love my India"
 # s = ""
 # for i in strng:
 #     s = i + s
@@ -288,24 +288,24 @@ expected output = 2"""
 
 """write python program to swap odd index numbers with even index numbers"""
 
-list = [1,2,3,4,5,6,7,8,9,10]
-list[0::2],list[1::2]=list[1::2],list[0::2]
-
-print(list)
+# list = [1,2,3,4,5,6,7,8,9,10]
+# list[0::2],list[1::2]=list[1::2],list[0::2]
+#
+# print(list)
 
 """ remove spaces from input string without inbuilt function.
 input = "remove spaCes from this stRing 123 "
 output = "removespacesfromthisstring123" """
 
-input = "remove spaces from this string 123 "
-
-result = ''
-# iterating the string
-for i in input:
-    # if the character is not a space
-    if i != ' ':
-        result = result + i
-print("String after removing the spaces :", result)
+# input = "remove spaces from this string 123 "
+#
+# result = ''
+# # iterating the string
+# for i in input:
+#     # if the character is not a space
+#     if i != ' ':
+#         result = result + i
+# print("String after removing the spaces :", result)
 #
 # # =======================================================================================================================
 
@@ -326,28 +326,28 @@ changed to '$', except the first char itself.
 Sample String : 'restartthecomputer'
 # Expected Result : 'resta$$$h$comp$$$'"""
 
-sample_string = 'restartthecomputer'
-
-lis = []
-s= 'restartthecomputer'
-for ch in s:
-    if ch in lis:
-        lis.append('$')
-    else:
-        lis.append(ch)
-print(''.join(lis))
+# sample_string = 'restartthecomputer'
+#
+# lis = []
+# s= 'restartthecomputer'
+# for ch in s:
+#     if ch in lis:
+#         lis.append('$')
+#     else:
+#         lis.append(ch)
+# print(''.join(lis))
 
 ------------------------------------------------------------------------------
 
-input = "restartthecomputer"
-dup_str = ""
-
-for i in input:
-    if i not in dup_str:
-        dup_str = dup_str + i
-    else:
-        dup_str= dup_str + "$"
-print(dup_str)
+# input = "restartthecomputer"
+# dup_str = ""
+#
+# for i in input:
+#     if i not in dup_str:
+#         dup_str = dup_str + i
+#     else:
+#         dup_str= dup_str + "$"
+# print(dup_str)
 
 ------------------------------------------------------------------------------------
 """python program to display Maximum frequency character in String"""
@@ -372,26 +372,26 @@ the script should find all the duplicate characters which are similar to each ot
 Example: “iworkatcelestialsystems”
 Output: etials"""
 
-strng_inp = "iworkatcelestialsystems"
-duplicate_chars = []
-
-# Approach 1 (Using Empty list)
-for i in strng_inp:
-    if strng_inp.count(i) > 1:
-        print(i)
-        if i not in duplicate_chars:
-           duplicate_chars.append(i)
-
-print("".join(duplicate_chars))
-
-
-# Approach 2 (using Empty String)
-duplicate = ""
-for i in strng_inp:
-    if strng_inp.count(i)>1:
-        if i not in duplicate:
-            duplicate= duplicate+ i
-print(duplicate)
+# strng_inp = "iworkatcelestialsystems"
+# duplicate_chars = []
+#
+# # Approach 1 (Using Empty list)
+# for i in strng_inp:
+#     if strng_inp.count(i) > 1:
+#         print(i)
+#         if i not in duplicate_chars:
+#            duplicate_chars.append(i)
+#
+# print("".join(duplicate_chars))
+#
+#
+# # Approach 2 (using Empty String)
+# duplicate = ""
+# for i in strng_inp:
+#     if strng_inp.count(i)>1:
+#         if i not in duplicate:
+#             duplicate= duplicate+ i
+# print(duplicate)
 
 -----------------------------------------------------------------------------------------------------
 
@@ -402,18 +402,18 @@ Ex: [30, 15, 25, 20, 5]
 Output: second Largest number is 25
 """
 
-input = [30,15,25,20,5]
-temp = 0
-for i in range(0,len(input)):
-    for j in range(i+1,len(input)):
-        if input[i] > input[j]:
-            temp = input[i]
-            input[i] = input[j]
-            input[j] = temp
-for i in  range(1,len(input)):
-    print(input[i],end=",")
-#
-print("the second largest number is ",input[-2])
+# input = [30,15,25,20,5]
+# temp = 0
+# for i in range(0,len(input)):
+#     for j in range(i+1,len(input)):
+#         if input[i] > input[j]:
+#             temp = input[i]
+#             input[i] = input[j]
+#             input[j] = temp
+# for i in  range(1,len(input)):
+#     print(input[i],end=",")
+# #
+# print("the second largest number is ",input[-2])
 
 
 
@@ -442,96 +442,96 @@ year, determine whether it is a leap year.If it is a leap year, return the Boole
 # list = [23,45,87,90,65]
 
 "----------------------------------------------------------------------------------------------------"
-str = "great is india"
+# str = "great is india"
+#
+# lis = str.split()
+# print(str)
+# op = lis[::-1]
+# print(op)
+# result = " ".join(op)
+# print(result)
+#
+# number = input("Enter the number")
+# temp =number
+# rever = 0
 
-lis = str.split()
-print(str)
-op = lis[::-1]
-print(op)
-result = " ".join(op)
-print(result)
-
-number = input("Enter the number")
-temp =number
-rever = 0
-
-while number > 0:
-    digit = number % 10
-    rever = rever * 10 + digit
-    number = number // 10
-if temp == rever:
-    print("this number is palindrome")
-else:
-    print("this is not palindrome")
-
-
-
-list = [1,2,3,4,5,6,7]
-
-list.sort()
-
-print("the second element of list is ",list[-2])
+# while number > 0:
+#     digit = number % 10
+#     rever = rever * 10 + digit
+#     number = number // 10
+# if temp == rever:
+#     print("this number is palindrome")
+# else:
+#     print("this is not palindrome")
 
 
-list = [23,45,5,34,76,56]
 
-list.remove(max(list))
-
-print(max(list))
+# list = [1,2,3,4,5,6,7]
+#
+# list.sort()
+#
+# print("the second element of list is ",list[-2])
+#
+#
+# list = [23,45,5,34,76,56]
+#
+# list.remove(max(list))
+#
+# print(max(list))
 
 
 """to find 2nd max element of list"""
 
-list = [23,45,67,2,3,4,5]
-print(list)
-# 1st approach
-# removing maximum element
-
-output = list.remove(max(list))
-
-print(max(list))
+# list = [23,45,67,2,3,4,5]
+# print(list)
+# # 1st approach
+# # removing maximum element
+#
+# output = list.remove(max(list))
+#
+# print(max(list))
 
 # 2nd approach sorting the list
-Output = list.sort()
-
-print(max(list))
+# Output = list.sort()
+#
+# print(max(list))
 
 
 
 # ========================================================================================================================
 """Calculate the sum of all numbers from 1 to a given number"""
 
-n = int(input("Enter the Number"))
-sum = 0
-for i in range(1,n+1):
-    sum = sum + i
-print(f"the sum of numbers upto {n} is :",sum)
+# n = int(input("Enter the Number"))
+# sum = 0
+# for i in range(1,n+1):
+#     sum = sum + i
+# print(f"the sum of numbers upto {n} is :",sum)
 
 # ===========================================================================================================================
 """Write a program to print multiplication table of a given number"""
-num = int(input("enter the number"))
-
-for i in range(1,11):
-     print(f"{num} x {i} :",num * i )
+# num = int(input("enter the number"))
+#
+# for i in range(1,11):
+#      print(f"{num} x {i} :",num * i )
 
 
 
 # ======================================================================================================================
 
-def triangle_pattern(n):
-    for i in range(1,n+1):
-        for j in range(1,i+1):
-            print("* " ,end= "")
-        print("\n")
-
-    for i in range(1,n+1):
-        print(" " * (n-i) + " *" * i)
-
-
-
-
-n = int(input("enter rows"))
-triangle_pattern(n)
+# def triangle_pattern(n):
+#     for i in range(1,n+1):
+#         for j in range(1,i+1):
+#             print("* " ,end= "")
+#         print("\n")
+#
+#     for i in range(1,n+1):
+#         print(" " * (n-i) + " *" * i)
+#
+#
+#
+#
+# n = int(input("enter rows"))
+# triangle_pattern(n)
 
 "-----------------------------------------------------------------------------------------------------------"
 
