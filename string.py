@@ -121,3 +121,161 @@ Length of the longest word: 9"""
 #
 # print(obj)
 
+"""9. Write a Python program to remove the nth index character from a nonempty string.
+"""
+# A = "Avinash"
+# n = 3
+# B = A[:n] + A[n+1:]
+# print(B)
+
+"""10. Write a Python program to change a given string to a newly string where 
+the first and last chars have been exchanged."""
+
+# A = "Avinash"
+# B = ""
+#
+# C = A[-1] + A[1:-1] + A[0]
+# print(C)
+
+"""11. Write a Python program to remove characters that have odd index values in a given string.
+"""
+# A = "Avinash"
+# B = ""
+#
+# for i in range(len(A)):
+#     if i%2==0:
+#         B+= A[i]
+# print(B)
+
+"""12. Write a Python program to count the occurrences of each word in a given sentence.
+"""
+# A = 'the quick brown fox jumps over the lazy dog.'
+# C = A.split()
+# B = {}
+#
+# for i in C:
+#     if i in B:
+#         B[i] += 1
+#     else:
+#         B[i] = 1
+# print(B)
+
+"""13. Write a Python script that takes input from the user and displays that input back in upper and lower cases."""
+
+# A = 'the quick brown fox jumps over the lazy dog.'
+#
+# print(A.upper())
+# print(A.lower())
+
+"""14. Write a Python program that accepts a comma-separated sequence of words as input and prints 
+the distinct words in sorted form (alphanumerically).
+Sample Words : red, white, black, red, green, black
+Expected Result : black, green, red, white,red"""
+# Sample_Words = "red, white, black, red, green, black"
+# sorted_words = Sample_Words.split()
+# A= sorted(sorted_words)
+# print(A)
+
+"""15. Write a Python function to create an HTML string with tags around the word(s).
+Sample function and result :
+add_tags('i', 'Python') -> '<i>Python</i>'
+add_tags('b', 'Python Tutorial') -> '<b>Python Tutorial </b>'"""
+
+# def html_fun(A, B):
+#     print(f'<{A}>{B}</{A}>')
+# html_fun('i', 'Python')
+
+"""16. Write a Python function to insert a string in the middle of a string.
+Sample function and result :
+insert_sting_middle('[[]]<<>>', 'Python') -> [[Python]]
+insert_sting_middle('{{}}', 'PHP') -> {{PHP}}"""
+
+# A = "python"
+# print(f"[[{A}]]")
+
+"""17. Write a Python function to get a string made of 4 copies of the last two characters of a specified
+ string (length must be at least 2).
+Sample function and result :
+insert_end('Python') -> onononon
+insert_end('Exercises') -> eseseses"""
+
+# def sample(string1):
+#     print(string1[-2:]*4)
+# sample("avinash")
+
+"""18. Write a Python function to get a string made of the first three characters of a specified string.
+ If the length of the string is less than 3, return the original string.
+Sample function and result :
+first_three('ipy') -> ipy
+first_three('python') -> pyt"""
+
+# def my_fun(inp):
+#     if len(inp) < 3:
+#         print(inp)
+#     else:
+#         print(inp[0:3])
+# my_fun("Av")
+
+"""19. Write a Python program to get the last part of a string before a specified character.
+https://www.w3resource.com/python-exercises
+https://www.w3resource.com/python"""
+
+# A = "https://www.w3resource.com/python-exercises"
+# B = A.rsplit("-",1)[0]
+# print(B)
+
+"""20. Write a Python function to reverse a string if its length is a multiple of 4.
+"""
+# A = "ruby"
+# if len(A) % 4 == 0:
+#     print(A[::-1])
+
+"""21. Write a Python function to convert a given string to all uppercase 
+if it contains at least 2 uppercase characters in the first 4 characters."""
+
+# def to_uppercase(str1):
+#     num_upper = 0
+#     for letter in str1[:4]:
+#         if letter.upper() == letter:
+#             num_upper += 1
+#     if num_upper >= 2:
+#         return str1.upper()
+#     return str1
+#
+# print(to_uppercase('Python'))
+# print(to_uppercase('PyThon'))
+
+# A = "PyThon"
+# B = ""
+#
+# for i in A[:4]:
+#     if i.upper() == i:
+#         B+=i
+# print(B)
+
+"""Write a Python program to check whether a string starts with specified characters.
+"""
+# A = "w3respurces.com"
+#
+# if "w3r" in A[0:]:
+#     print("True")
+# else:
+#     print("False")
+
+#print(A.startswith("w3r"))
+
+"""Sample string: 'thequickbrownfoxjumpsoverthelazydog'"""
+
+# Sample_string= 'thequickbrownfoxjumpsoverthelazydog'
+# A = {}
+# for i in Sample_string:
+#     if i in A:
+#         A[i] += 1
+#     else:
+#         A[i] = 1
+# print(A)
+
+# A = "The quick brown fox jumps over the lazy dog."
+# B = A.split()
+# print(B[::-1])
+
