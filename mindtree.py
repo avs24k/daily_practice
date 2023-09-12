@@ -459,30 +459,295 @@ o/p=[6,7,8,9]
 #         B.append(i)
 # print(B)
 
+"""
+1) Duplicate values in list
+"""
+# List  = [1,1,2,2,3,3,4,5]
+# unique = set()
+# duplicate= []
+# for i in List:
+#     if i in unique:
+#         duplicate.append(i)
+#     else:
+#         unique.add(i)
+#
+# print(duplicate)
+
+# List1  = [1,1,2,2,3,3,4,5]
+# A = []
+# B = []
+# for i in List1:
+#     if i not in A:
+#         A.append(i)
+#     else:
+#         B.append(i)
+# print(B)
+
+
+"""
+2) WAP to find first 5 even numbers using lamda function
+"""
+
+# A = filter(lambda x:x%2==0, range(10))
+# print(list(A))
+
+"""
+3) How many time "t" is coming on string
+"""
+# stri = "india is the best country"
+# count = 0
+#
+# for i in stri:
+#     if "a" in i:
+#         count += 1
+# print(count)
+
+"""
+4) This program reads the contents of the file "Interview.txt,counts the number of uppercase letters in 
+the file,and then prints the last character of the file and the total count of uppercase letters.
+"""
+
+# upper_case = 0
+#
+# with open("Interview.text","r") as reading_file:
+#     file = reading_file.read()
+#     for i in file:
+#         if i.isupper():
+#             print(i)
+#             upper_case += 1
+# print(upper_case)
+
+
+"""
+5) Reverse the string
+"""
+
+# strng = "i love my India"
+#
+# print(strng[::-1])
+#
+# strng = "i love my India"
+# s = ""
+# for i in strng:
+#     s = i + s
+# print(s)
 
 
 
+"""
+6) print table of 5
+"""
+# for i in range(1,11):
+#     print(f"5 * {i} =",5*i)
+
+"""
+7) swap value
+"""
+
+# a = 2
+# b = 3
+#
+# a,b =b,a
+#
+# print(a,b)
+""" 
+8) Find the count of numbers containing '6' in it from the sequence 1 to 1000.
+Also print the numbers
+"""
+# count = 0
+#
+# for i in range(1000):
+#     if "6" in str(i):
+#         count += 1
+# print(count)
+
+"""
+9) count of the value of occurance
+"""
+
+# str = "you are welcome to python programming are welcome to python programming"
+# split_str = str.split()
+# A = {}
+# for i in split_str:
+#     if i in A:
+#         A[i]+= 1
+#     else:
+#         A[i] = 1
+# print(A)
+
+"""
+10) The provided code generates a list result containing the missing integers from 
+the range between the minimum and maximum values of the inputs list.
+"""
+
+# inputs = [6,3,5,1,2,10]
+# op = []
+#
+# for i in range(min(inputs),max(inputs) ):
+#     if i not in inputs:
+#         op.append(i)
+# print(op)
+
+"""
+11) Input :- "i am the input"
+     Output:- "the input am i"
+"""
+# A = "i am the input"
+# V = A.split()
+# B = V[:-2]
+# C = V[2::]
+# F = reversed(B)
+# D = tuple(B) + tuple(F)
+# print(D)
+
+"""
+12) Sort the dictionary on basis of values 
+"""
+# #approch1 :
+# dict1 = {'a':5, 'b':3, 'c':4, 'd':1, 'e':2}
+# B = sorted(dict1.items())
+# A = sorted(B,key= lambda x:x[1])
+# print(A)
+
+# people = [
+#     {'name': 'Alice', 'age': 25},
+#     {'name': 'Bob', 'age': 20},
+#     {'name': 'Charlie', 'age': 18},
+#     {'name': 'David', 'age': 22}
+# ]
+#
+# A = sorted(people, key= lambda x:x["age"])
+# print(A)
+
+""" 
+13) how will be two mandatory and two optional paramter in function
+"""
+# def my_fun(A,B,C=None,D=None):
+#     print(A+B + C)
+# my_fun(1,2,C =3,D =4)
+
+"""write a python program to multiply elements of two list save in new list"""
+# list1 = [2, 4, 6, 8, 10]
+# list2 = [2, 3, 4, 5, 6]
+# A = []
+#
+# for i,j in zip(list2,list1):
+#     A.append(i * j)
+#
+# print(A)
+
+""" remove spaces from input string without inbuilt function.
+input = "remove spaCes from this stRing 123 "
+output = "removespacesfromthisstring123" """
+
+# input = "remove spaCes from this stRing 123 "
+# op = ""
+# for i in input:
+#     if i != '':
+#         op +=i
+# print(op)
+#
+# input_string = "remove spaCes from this stRing 123 "
+# output_string = ""
+#
+# for char in input_string:
+#     if char != ' ':
+#         output_string += char
+#
+# print("Input string:", input_string)
+# print("Output string:", output_string)
+
+"""Python Program To Remove Duplicates From A Given String:"mississippi"""
+
+# A = "mississippi"
+# B = ""
+#
+# for i in A:
+#     if i not in B:
+#         B += i
+# print(B)
+
+# Sample String : 'restartthecomputer'
+# # Expected Result : 'resta$$$h$comp$$$'
+
+# String = 'restartthecomputer'
+# B = []
+#
+# for i in String:
+#     if i in B:
+#         B.append("$")
+#     else:
+#         B.append(i)
+# print("".join(B))
+# C = ""
+# for i in String:
+#     if String.count(i) > 1:
+#         C += "*"
+#     else:
+#         C += i
+#
+# print(C)
+
+"""python program to display Maximum frequency character in String"""
+# A = "avinash patil is best is"
+# B = A.split()
+# C = {}
+#
+# for i in B:
+#     if i in C:
+#         C[i] +=1
+#     else:
+#         C[i] = 1
+# print(C)
+
+Example= "iworkatcelestialsystems"
+"""Output: etials"""
+
+# duplicate = ""
+# unique = ""
+#
+# for i in Example:
+#     if i not in duplicate:
+#         duplicate += i
+#
+# print(duplicate)
 
 
 
+#
+# for i in Example:
+#     if i in duplicate:
+#         duplicate += i
+#     else:
+#         unique += i
+# print(duplicate)
+#
+# A = ""
+# for i in Example:
+#     if Example.count(i) == 1:
+#         if i not in A:
+#             A += i
+# print(A)
 
 
 
+# def triangle_pattern(n):
+#     for i in range(1,n+1):
+#         for j in range(1,i+1):
+#             print("* " ,end= "")
+#         print("\n")
+#
+#     for i in range(1,n+1):
+#         print(" " * (n-i) + " *" * i)
+#
+# n = int(input("enter rows"))
+# triangle_pattern(n)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# n = 6
+# for i in range(1,n+1):
+#     for j in range(1,i+1):
+#         print("*",end="")
+#     print()
 
 
 
