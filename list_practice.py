@@ -476,9 +476,9 @@ A = ["Avi","Patil","Ramesh"]
 # B = [j for i in A for j in ("C",i)]
 # print(B)
 #
-for i in A:
-    for j in ("C",i):
-        print(j,end=",")
+# for i in A:
+#     for j in ("C",i):
+#         print(j,end=",")
 
 
 """48. Write a Python program to print nested lists (each list on a new line) using the print() function.
@@ -525,13 +525,12 @@ O/p = ['a', 'd', 'g', 'j', 'm'],['b', 'e', 'h', 'k', 'n'],['c', 'f', 'i', 'l'],
 #     print(C[i::3],end=",")
 
 """Write a Python program to concatenate elements of a list.
-
 """
 
 # color1 = ['red', 'green', 'orange']
 # for i in color1:
 #     print(i,end="")
-
+#
 # print("".join(color1))
 
 """-------------------------------------------------------------------------------------"""
