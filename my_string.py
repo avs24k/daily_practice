@@ -129,13 +129,14 @@ Length of the longest word: 9"""
 # print(B)
 
 """10. Write a Python program to change a given string to a newly string where 
-the first and last chars have been exchanged."""
+the first and last chars have been exchanged.
+op = hvinasA"""
 
-# A = "Avinash"
-# B = ""
-#
-# C = A[-1] + A[1:-1] + A[0]
-# print(C)
+A = "Avinash"
+B = ""
+
+C = A[-1] + A[1:-1] + A[0]
+print(C)
 
 """11. Write a Python program to remove characters that have odd index values in a given string.
 """
