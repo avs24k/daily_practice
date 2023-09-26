@@ -247,8 +247,71 @@ Expected output: {'w': 1, '3': 1, 'r': 2, 'e': 2, 's': 1, 'o': 1, 'u': 1, 'c': 1
 #         B[i] = 1
 # print(B)
 
+"""25. Write a Python program to print a dictionary in table format."""
+# (wrong answer)
+# B = {2: [1, 2, 3], 3: 4, 5: 9, 1: 16, 4: 25}
+# for i,j in B.items():
+#     print(i,"|",j)
 
+"""26. Write a Python program to count the values associated with a key in a dictionary.
+Expected Output:
+6
+2
+"""
+# B = [{2: 1, 3: 4, 5: 9, 1: 16, 4: 25},{2: 3, 3: 88, 5: 99, 1: 66, 4: 55}]
+# C = 0
 
+# for i,j in B.items():
+#     C += j
+# print(C)
 
+# print(sum(i[2] for i in B))
+# print(sum(i[3] for i in B))
 
+"""27. Write a Python program to convert a list into a nested dictionary of keys."""
+"""28. Write a Python program to sort a list alphabetically in a dictionary."""
+
+# A = {'w': 1, 'i': 1, 'r': 2, 'e': 2, 's': 1, 'o': 1, 'u': 1, 'c': 1}
+# B = sorted(A.items())
+# print(dict(B))
+
+# num = {'n1': [2, 3, 1], 'n2': [5, 1, 2], 'n3': [3, 2, 4]}
+# A = {i:sorted(j) for i,j in num.items()}
+# print(A)
+
+"""29. Write a Python program to remove spaces from dictionary keys."""
+
+# sample_dict = {'first name': 'Alice', 'last name': 'Smith', 'age': 30}
+# A= {}
+# for i,j in sample_dict.items():
+#     remove_space = i.replace(" ","")
+#     A[remove_space] = j
+# print(A)
+#
+# B = {i.replace(" ",""):j for i,j in sample_dict.items()}
+# print(B)
+
+"""30. Write a Python program to get the top three items in a shop.
+Sample data: {'item1': 45.50, 'item2':35, 'item3': 41.30, 'item4':55, 'item5': 24}
+Expected Output:
+item4 55
+item1 45.5
+item3 41.3"""
+# N = {'item1': 45.50, 'item2':35, 'item3': 41.30, 'item4':55, 'item5': 24}
+# A = sorted(N.items(), key= lambda x:x[1],reverse=True)
+# B = A[:3]
+# for i in B:
+#     print(*i)
+
+"""31. Write a Python program to get the key, value and item in a dictionary."""
+"""32. Write a Python program to print a dictionary line by line."""
+"""Later"""
+
+# students = {'Aex': {'class':'V','rolld_id':2},
+#             'Puja': {'class':'V', 'roll_id':3}}
+#
+# for i in students:
+#     print(i)
+#     for j in students[i]:
+#         print(j,students[i][j])
 

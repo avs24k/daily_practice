@@ -179,11 +179,11 @@ of the first and last 5 elements where the values are square numbers between 1 a
 """22. Write a Python program to find the index of an item in a specified list.
 """
 # A = [1, 2, 3, 4, 5]
-# # print(A.index(2))
-#
+# # # print(A.index(2))
+# #
 # B = []
-# for i in range(len(A)):
-#     if A[i]== 4:
+# for i in range(0,len(A)):
+#     if A[i]== 0:
 #         B.append(i)
 # print(B)
 
