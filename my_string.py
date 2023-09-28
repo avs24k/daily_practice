@@ -132,11 +132,9 @@ Length of the longest word: 9"""
 the first and last chars have been exchanged.
 op = hvinasA"""
 
-A = "Avinash"
-B = ""
-
-C = A[-1] + A[1:-1] + A[0]
-print(C)
+# A = "Avinash"
+# C = A[-1] + A[1:-1] + A[0]
+# print(C)
 
 """11. Write a Python program to remove characters that have odd index values in a given string.
 """

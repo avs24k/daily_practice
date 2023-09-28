@@ -1,4 +1,3 @@
-
 """
 1) Duplicate values in list
 """
@@ -58,11 +57,7 @@ the file,and then prints the last character of the file and the total count of u
 # print("\ntotal number of upper case is ",count)
 
 
-
-
-"""
-5) Reverse the string
-"""
+"""5) Reverse the string"""
 
 # strng = "i love my India"
 # s = ""
@@ -70,7 +65,7 @@ the file,and then prints the last character of the file and the total count of u
 #     s = i + s
 # print(s)
 
-#OR
+# OR
 
 # strng = "i love my India"
 # A = reversed(strng)
@@ -111,7 +106,7 @@ Also print the numbers
 9) count of the value of occurance
 """
 
-#approach:1
+# approach:1
 
 # str = "you are welcome to python programming are welcome to python programming"
 # str_split = str.split()
@@ -124,7 +119,7 @@ Also print the numbers
 # print(dict)
 
 
-#approach:2
+# approach:2
 # str = "you are welcome to python programming are welcome to python programming"
 # str_split = str.split()
 # count = 0
@@ -132,18 +127,18 @@ Also print the numbers
 #     count = str_split.count(i)
 #     print(i,count)
 
-#approach:3
+# approach:3
 # from collections import Counter
 # A = Counter(str_split)
 # print(A)
 
 
-#approach:4
+# approach:4
 
-#InputStr = "aaaabbbccccc111111@"
-#dict = {}
+# InputStr = "aaaabbbccccc111111@"
+# dict = {}
 # for i in InputStr:
-#     # if i already appears as key in dict, increment the count
+#     # if I already appear as key in dict, increment the count
 #     if i in dict:
 #         dict[i] += 1
 #
@@ -152,7 +147,7 @@ Also print the numbers
 #         dict[i] = 1
 
 # printing result
-#print(dict)
+# print(dict)
 
 """
 10) The provided code generates a list result containing the missing integers from 
@@ -172,7 +167,7 @@ the range between the minimum and maximum values of the inputs list.
      Output:- "the input am i"
 """
 
-# s="i am the input"
+# s="I am the input"
 # split_s= s.split()
 # B = split_s[2::]
 # C= split_s[:-2]
@@ -247,7 +242,7 @@ you will get for following code
 example coupon_code= "happyishappy"
 expected output = 2"""
 
-#approach:1
+# approach:1
 # def count_free_deserts(coupon_code):
 #     # Check if the word "happy" is present in the coupon code
 #     if "happy" in coupon_code:
@@ -307,7 +302,7 @@ output = "removespacesfromthisstring123" """
 #         result = result + i
 # print("String after removing the spaces :", result)
 #
-# # =======================================================================================================================
+# =======================================================================================================================
 
 """Python Program To Remove Duplicates From A Given String:"mississippi"""
 # string = "mississippi"
@@ -337,8 +332,8 @@ Sample String : 'restartthecomputer'
 #         lis.append(ch)
 # print(''.join(lis))
 
-------------------------------------------------------------------------------
-
+"""------------------------------------------------------------------------------
+"""
 # input = "restartthecomputer"
 # dup_str = ""
 #
@@ -349,9 +344,8 @@ Sample String : 'restartthecomputer'
 #         dup_str= dup_str + "$"
 # print(dup_str)
 
-------------------------------------------------------------------------------------
-"""python program to display Maximum frequency character in String"""
-
+"""------------------------------------------------------------------------------------
+""""""python program to display Maximum frequency character in String"""
 
 # def max_freq_char(ip_str):
 #
@@ -393,8 +387,8 @@ Output: etials"""
 #             duplicate= duplicate+ i
 # print(duplicate)
 
------------------------------------------------------------------------------------------------------
-
+"""-----------------------------------------------------------------------------------------------------
+"""
 """
 Given an array, write a script to find Second largest number, without using in -built functions
 
@@ -416,15 +410,14 @@ Output: second Largest number is 25
 # print("the second largest number is ",input[-2])
 
 
-
 """
 In the Gregorian calendar, three conditions are used to identify leap years:
-The year can be evenly divided by 4, is a leap year, unless: The year can be evenly divided by 100, it is NOT a leap year, unless: The
+The yearcan be evenly divided by 4, is a leap year, unless: The year can be evenly divided by 100, 
+it is NOT a leap year, unless: The
 year is also evenly divisible by 400. Then it is a leap year.This means that in the Gregorian calendar, the
 years 2000 and 2400 are leap years,while 1800, 1900, 2100, 2200, 2300 and 2500 are NOT leap years. Given a
 year, determine whether it is a leap year.If it is a leap year, return the Boolean True, otherwise return False.
 """
-
 
 # def find_leap_year(year):
 #     leap = False
@@ -465,7 +458,6 @@ year, determine whether it is a leap year.If it is a leap year, return the Boole
 #     print("this is not palindrome")
 
 
-
 # list = [1,2,3,4,5,6,7]
 #
 # list.sort()
@@ -497,7 +489,6 @@ year, determine whether it is a leap year.If it is a leap year, return the Boole
 # print(max(list))
 
 
-
 # ========================================================================================================================
 """Calculate the sum of all numbers from 1 to a given number"""
 
@@ -513,7 +504,6 @@ year, determine whether it is a leap year.If it is a leap year, return the Boole
 #
 # for i in range(1,11):
 #      print(f"{num} x {i} :",num * i )
-
 
 
 # ======================================================================================================================
@@ -534,6 +524,3 @@ year, determine whether it is a leap year.If it is a leap year, return the Boole
 # triangle_pattern(n)
 
 "-----------------------------------------------------------------------------------------------------------"
-
-
-

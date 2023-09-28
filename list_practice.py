@@ -165,7 +165,7 @@ of the first and last 5 elements where the values are square numbers between 1 a
 
 """20. Write a Python program to access the index of a list.
 """
-# A = [1, 2, 3, 4, 5]
+# A = [1, 2, 3, 4, 5,6]
 #
 # for i in range(len(A)):
 #     print(A[i],i)
@@ -179,8 +179,8 @@ of the first and last 5 elements where the values are square numbers between 1 a
 """22. Write a Python program to find the index of an item in a specified list.
 """
 # A = [1, 2, 3, 4, 5]
-# # # print(A.index(2))
-# #
+# # # # print(A.index(2))
+# # #
 # B = []
 # for i in range(0,len(A)):
 #     if A[i]== 0:
@@ -471,7 +471,7 @@ o/p=[[1,2,3,4,5],[6,7,8,9,10],[11,12,13,14,15]]
 """47. Write a Python program to insert an element before each element of a list.
 """
 
-A = ["Avi","Patil","Ramesh"]
+# A = ["Avi","Patil","Ramesh"]
 #
 # B = [j for i in A for j in ("C",i)]
 # print(B)
@@ -547,12 +547,18 @@ o/p = "True"
 """
 
 # color1 = ["green", "orange", "black", "white"]
-# color2 = ["green", "green", "green", "green","orange"]
+# color2 = ["green1"]
 #
-# for i in color1:
-#     if "green" in color2:
-#         print("True")
-#         break
+# def my_fun(n,m):
+#     result = False
+#     for i in n:
+#         for j in m:
+#             if j in i:
+#                 return True
+#     return result
+# obj = my_fun(color1,color2)
+# print(obj)
+
 
 """58. Write a Python program to replace the last element in a list with another list.
 Sample data : [1, 3, 5, 7, 9, 10], [2, 4, 6, 8]
@@ -794,6 +800,36 @@ List reflecting the run-length encoding from the said string:
 #         B[i]=1
 # print(B)
 #
+
+"""STRING"""
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
