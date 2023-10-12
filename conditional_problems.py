@@ -1,6 +1,5 @@
 """1. Write a Python program to find those numbers which are divisible by 7 and multiples of 5,
 between 1500 and 2700 (both included)."""
-import random
 
 #
 # A = []
@@ -14,7 +13,6 @@ import random
 Note : User is prompted to enter a guess. If the user guesses wrong then the prompt appears again 
 until the guess is correct, on successful guess,
  user will get a "Well guessed!" message, and the program will exit."""
-
 
 # random_number = random.randint(1, 10)
 #
@@ -39,7 +37,6 @@ until the guess is correct, on successful guess,
 * * 
 *
 """
-
 
 # for i in range(1,5):
 #     for j in range(i):
@@ -115,3 +112,126 @@ fizz
 4
 buzz"""
 
+"""11 -----16 (remain)"""
+
+"""44. Write a Python program to construct the following pattern, using a nested loop number.
+Expected Output:
+
+1
+22
+333
+4444
+55555
+666666
+7777777
+88888888
+999999999
+"""
+
+# for i in range(1,10):
+#     print(str(i)*i)
+
+"""43. Write a Python program to create the multiplication table (from 1 to 10) of a number.
+Expected Output:
+
+Input a number: 6                                                       
+6 x 1 = 6                                                               
+6 x 2 = 12                                                              
+6 x 3 = 18                                                              
+6 x 4 = 24                                                              
+6 x 5 = 30                                                              
+6 x 6 = 36                                                              
+6 x 7 = 42                                                              
+6 x 8 = 48                                                              
+6 x 9 = 54                                                              
+6 x 10 = 60 """
+
+# Enter_number = int(input("Enter a value:"))
+# for i in range(1,11):
+#     print(f"{Enter_number} x {i} =",Enter_number * i)
+
+"""42. Write a Python program to calculate the sum and average of n 
+integer numbers (input from the user). Input 0 to finish."""
+
+# n = 0
+# m = 0
+# for i in range(1,5):
+#     n += i
+#     m += 1
+# print(n)
+# print(n/m-1)
+
+"""40. Write a Python program to find the median of three values.
+Expected Output:
+
+Input first number: 15                                                  
+Input second number: 26                                                 
+Input third number: 29                                                  
+The median is 26.0"""
+
+"""36. Write a Python program to check if a triangle is equilateral, isosceles or scalene.
+Note :
+An equilateral triangle is a triangle in which all three sides are equal.
+A scalene triangle is a triangle that has three unequal sides.
+An isosceles triangle is a triangle with (at least) two equal sides.
+Expected Output:
+
+Input lengths of the triangle sides:                                    
+x: 6                                                                    
+y: 8                                                                    
+z: 12                                                                   
+Scalene triangle  """
+
+# A = 7
+# B = 6
+# C = 5
+#
+# if A == B == C:
+#     print("Equilibrating")
+# elif A == B or B == C or A == C:
+#     print("isosceles ")
+# else:
+#     print("scalene ")
+
+"""35. Write a Python program that checks whether a string represents an integer or not.
+Expected Output:
+
+Input a string: Python                                                  
+The string is not an integer."""
+
+# def my_fun(n):
+#     if n[0] in ('+','-'):
+#         n= n[1:]
+#     for char in n:
+#         if not char.isdigit():
+#             return False
+#     return True
+#
+# if my_fun("123"):
+#     print("number")
+# else:
+#     print("not  number")
+
+
+"""34. Write a Python program to sum two integers. However, if the sum is between 15 and 20 it will return 20"""
+
+
+# def my_fun(a, b):
+#     if (a + b) in range(15, 21):
+#         return 20
+#     else:
+#         return a + b
+#
+#
+# print(my_fun(10, 2))
+
+
+# def fun(n):
+#     result = 'constant'
+#
+#     if n in "AEOIUaeoiu" :
+#         return 'Vowel'
+#     return result
+#
+#
+# print(fun('k'))

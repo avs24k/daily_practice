@@ -179,13 +179,13 @@ Sample output: Counter({'a': 400, 'b': 400, 'd': 400, 'c': 300})"""
 # d1 = {'a': 100, 'b': 200, 'c':300}
 # d2 = {'a': 300, 'b': 200, 'd':400}
 # A = {}
-
+#
 # for i,j in d1.items():
 #     if i in A:
 #         A[i] += j
 #     else:
 #         A[i] = j
-#
+
 # for k,l in d2.items():
 #     if k in A:
 #         A[k] += l
@@ -222,6 +222,8 @@ bd"""
 # C = A[:3]
 # print(dict(C))
 
+
+
 """23. Write a Python program to combine values in a list of dictionaries.
 Sample data: [{'item': 'item1', 'amount': 400}, {'item': 'item2', 'amount': 300}, {'item': 'item1', 'amount': 750}]
 Expected Output: Counter({'item1': 1150, 'item2': 300})"""
@@ -230,6 +232,17 @@ Expected Output: Counter({'item1': 1150, 'item2': 300})"""
 # B = Counter()
 # for i in A:
 #     B[i['item']] += i['amount']
+# print(B)
+
+# A = [{'item': 'item1', 'amount': 400}, {'item': 'item2', 'amount': 300}, {'item': 'item1', 'amount': 750}]
+# B = {}
+# for i in A:
+#     item = i['item']
+#     amount = i['amount']
+#     if item in B:
+#         B[item] += amount
+#     else:
+#         B[item] = amount
 # print(B)
 
 """24. Write a Python program to create a dictionary from a string.
@@ -258,15 +271,15 @@ Expected Output:
 6
 2
 """
-# B = [{2: 1, 3: 4, 5: 9, 1: 16, 4: 25},{2: 3, 3: 88, 5: 99, 1: 66, 4: 55}]
+B = [{2: 1, 3: 4, 5: 9, 1: 16, 4: 25},{2: 3, 3: 88, 5: 99, 1: 66, 4: 55}]
 # C = 0
-
+#
 # for i,j in B.items():
 #     C += j
 # print(C)
 
-# print(sum(i[2] for i in B))
-# print(sum(i[3] for i in B))
+print(sum(i[2] for i in B))
+print(sum(i[3] for i in B))
 
 """27. Write a Python program to convert a list into a nested dictionary of keys."""
 """28. Write a Python program to sort a list alphabetically in a dictionary."""
