@@ -1,6 +1,6 @@
 """Write a Python program that accepts the user's first and last name and prints
 them in reverse order with a space between them."""
-import copy
+# import copy
 
 # #approach - 1
 # First_name = ["Avinash"]
@@ -15,7 +15,8 @@ import copy
 #
 # obj=full_name("Avinash","PAtil")
 
-"""6. Write a Python program that accepts a sequence of comma-separated numbers from the user and generates a list and a tuple of those numbers.
+"""6. Write a Python program that accepts a sequence of comma-separated numbers from the user and generates 
+a list and a tuple of those numbers.
 Sample data : 3, 5, 7, 23
 Output :
 List : ['3', ' 5', ' 7', ' 23']
@@ -320,7 +321,8 @@ Expected Output :
 # result = gcd(num1, num2)
 # print(f"The greatest common divisor (GCD) of {num1} and {num2} is: {result}")
 
-"""33. Write a Python program to sum three given integers. However, if two values are equal, the sum will be zero.
+"""33. Write a Python program to sum three given integers. However, if two values are equal, 
+the sum will be zero.
 """
 # def value(a,b,c):
 #     if a == b or b == c or c == a:
@@ -503,7 +505,7 @@ and do nothing if the value is not equal."""
 """95. Write a Python program to check whether a string is numeric.
 """
 
-# A = "123"
+# A = "avi"
 # if A.isdigit():
 #     print("value is numeric")
 # else:

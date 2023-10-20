@@ -15,8 +15,8 @@ Expected Result : {0: 10, 1: 20, 2: 30}"""
 # A = {0: 10, 1: 20}
 # A.update({2:30})
 # print(A)
-
 """3. Write a Python script to concatenate the following dictionaries to create a new one.
+
 
 Sample Dictionary :
 dic1={1:10, 2:20}
@@ -52,7 +52,8 @@ Expected Output : {1: 1, 2: 4, 3: 9, 4: 16, 5: 25}"""
 """7. Write a Python script to print a dictionary where the keys are numbers between 1 and 15 (both included) and
  the values are the square of the keys.
 Sample Dictionary
-{1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64, 9: 81, 10: 100, 11: 121, 12: 144, 13: 169, 14: 196, 15: 225}"""
+{1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64, 9: 81, 10: 100, 11: 121, 12: 144, 13: 169, 14:
+ 196, 15: 225}"""
 
 # A = {i:i*i for i in range(1,16)}
 # print(A)
@@ -108,6 +109,9 @@ Sample Dictionary
 # C= dict(zip(A,B))
 # print(C)
 
+# C = {i: j for i, j in zip(A, B)}
+# print(C)
+
 """14. Write a Python program to sort a given dictionary by key."""
 # B = {2: 1, 3: 4, 5: 9, 1: 16, 4: 25}
 # A = sorted(B.items(),key= lambda  x:x[0])
@@ -123,7 +127,6 @@ Sample Dictionary
 # print(C)
 
 """16. Write a Python program to get a dictionary from an object's fields."""
-
 
 # class my_class():
 #     def __init__(self):
@@ -179,23 +182,17 @@ Sample output: Counter({'a': 400, 'b': 400, 'd': 400, 'c': 300})"""
 # d1 = {'a': 100, 'b': 200, 'c':300}
 # d2 = {'a': 300, 'b': 200, 'd':400}
 # A = {}
-#
-# for i,j in d1.items():
-#     if i in A:
-#         A[i] += j
-#     else:
-#         A[i] = j
 
-# for k,l in d2.items():
-#     if k in A:
-#         A[k] += l
-#     else:
-#         A[k] = l
-#
+# for i, l in d1.items():
+#     A[i] = A.get(i, 0) + l
+# for i, l in d2.items():
+#     A[i] = A.get(i, 0) + l
 # print(A)
 
+
 """20. Write a Python program to print all distinct values in a dictionary.
-Sample Data : [{"V":"S001"}, {"V": "S002"}, {"VI": "S001"}, {"VI": "S005"}, {"VII":"S005"}, {"V":"S009"},{"VIII":"S007"}]
+Sample Data : [{"V":"S001"}, {"V": "S002"}, {"VI": "S001"}, {"VI": "S005"}, {"VII":"S005"}, 
+{"V":"S009"},{"VIII":"S007"}]
 Expected Output : Unique Values: {'S005', 'S002', 'S007', 'S001', 'S009'}"""
 
 # A = [{"V":"S001"}, {"V": "S002"}, {"VI": "S001"}, {"VI": "S005"}, {"VII":"S005"}, {"V":"S009"},{"VIII":"S007"}]
@@ -223,9 +220,9 @@ bd"""
 # print(dict(C))
 
 
-
 """23. Write a Python program to combine values in a list of dictionaries.
-Sample data: [{'item': 'item1', 'amount': 400}, {'item': 'item2', 'amount': 300}, {'item': 'item1', 'amount': 750}]
+Sample data: [{'item': 'item1', 'amount': 400}, {'item': 'item2', 'amount': 300}, 
+{'item': 'item1', 'amount': 750}]
 Expected Output: Counter({'item1': 1150, 'item2': 300})"""
 
 # A = [{'item': 'item1', 'amount': 400}, {'item': 'item2', 'amount': 300}, {'item': 'item1', 'amount': 750}]
@@ -271,15 +268,13 @@ Expected Output:
 6
 2
 """
-B = [{2: 1, 3: 4, 5: 9, 1: 16, 4: 25},{2: 3, 3: 88, 5: 99, 1: 66, 4: 55}]
+# B = [{2: 1, 3: 4, 5: 9, 1: 16, 4: 25}, {2: 3, 3: 88, 5: 99, 1: 66, 4: 55}]
 # C = 0
 #
 # for i,j in B.items():
 #     C += j
 # print(C)
 
-print(sum(i[2] for i in B))
-print(sum(i[3] for i in B))
 
 """27. Write a Python program to convert a list into a nested dictionary of keys."""
 """28. Write a Python program to sort a list alphabetically in a dictionary."""
@@ -327,4 +322,3 @@ item3 41.3"""
 #     print(i)
 #     for j in students[i]:
 #         print(j,students[i][j])
-

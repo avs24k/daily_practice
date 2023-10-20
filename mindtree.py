@@ -6,19 +6,6 @@
 #     B += 1
 # print(B)
 
-"""2. Write a Python program to count the number of characters (character frequency) in a string.
-Sample String : google.com'
-Expected Result : {'g': 2, 'o': 3, 'l': 1, 'e': 1, '.': 1, 'c': 1, 'm': 1}"""
-
-# A = "bjjjlklkhkh"
-# B = {}
-#
-# for i in A:
-#     if i in B:
-#         B[i] += 1
-#     else:
-#         B[i] = 1
-# print(B)
 
 """3. Write a Python program to get a string made of the first 2 and last 2 characters of a given string. 
 If the string length is less than 2, return the empty string instead.

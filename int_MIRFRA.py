@@ -1,14 +1,22 @@
 
 # covert all repeated char into "*"
-# Input = "television"
+# Input = "televisionei"
 # B = ""
 # for i in Input:
-#     print(i)
 #     if Input.count(i)>1:
 #         B += "*"
 #     else:
 #         B += i
 # print(B)
+
+# for i in Input:
+#     if i in B:
+#         B += "*"
+#     else:
+#         B += i
+# print(B)
+
+
 
 """
 Inp  = 5

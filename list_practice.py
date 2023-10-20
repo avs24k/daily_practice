@@ -43,7 +43,7 @@ Expected Result : 2"""
 # B = 0
 #
 # for i in A:
-#     if i[0]==i[-1]:
+#     if len(i)>=2 and i[0]==i[-1]:
 #         B += 1
 # print(B)
 
@@ -176,7 +176,7 @@ of the first and last 5 elements where the values are square numbers between 1 a
 # B = "".join(A)
 # print(B)
 
-"""22. Write a Python program to find the index of an item in a specified list.
+""" 22. Write a Python program to find the index of an item in a specified list.
 """
 # A = [1, 2, 3, 4, 5]
 # # # # print(A.index(2))
@@ -338,6 +338,9 @@ Sample Output : ['p1', 'q1', 'p2', 'q2', 'p3', 'q3', 'p4', 'q4', 'p5', 'q5']
 #       B.append(i+str(j))
 # print(B)
 
+
+# B = [j+str(i) for i in range(1,6) for j in A]
+# print(B)
 """37. Write a Python program to find common items in two lists.
 """
 # A = [1,2,3,4,5,6,7]

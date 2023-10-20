@@ -420,11 +420,11 @@ Ex3:(10) → [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]"""
 6 and extending to the next 7.
 (every 6 will be followed by at least one 7). Return 0 for no numbers."""
 
-A = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-count = 0
-
-for i in range(len(A)):
-    if A[i]!=6:
-     count = count + i
-
-print(count)
+# A = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+# count = 0
+#
+# for i in range(len(A)):
+#     if A[i]!=6:
+#      count = count + i
+#
+# print(count)
