@@ -281,6 +281,15 @@ expected output = 2"""
 #     res_list.append(list1[i] * list2[i])
 # print(res_list)
 
+# list1 = [2, 4, 6, 8, 10]
+# list2 = [2, 3, 4, 5, 6]
+#
+# res_list=[]
+#
+# for i,j in zip(list1,list2):
+#     res_list.append(i*j)
+# print(res_list)
+
 """write python program to swap odd index numbers with even index numbers"""
 
 # list = [1,2,3,4,5,6,7,8,9,10]
@@ -356,8 +365,9 @@ Sample String : 'restartthecomputer'
 #           freq[i] = freq[i] + 1
 #         else:
 #             freq[i] = 1
-#     max_char = max(freq,key=freq.get)
+#     max_char = max(freq.items(),key= lambda x:x[0])
 #     return max_char
+# print(max_freq_char('iworkatcelestialsystems'))
 
 """Find all duplicate character of a string “iworkatcelestialsystems” Given any string,
 the script should find all the duplicate characters which are similar to each other

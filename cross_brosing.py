@@ -40,3 +40,30 @@ This approach allows you to easily expand your test coverage by adding more brow
 and it helps keep your test code concise and readable. The fixture ensures that WebDriver instances are properly
 set up and cleaned up for each test,
     making it a convenient way to manage WebDriver instances in a parameterized testing scenario."""
+
+
+"""import pytest
+from selenium import webdriver
+
+@pytest.fixture(params=["chrome", "firefox", "edge"], scope="class")
+def driver(request):
+    if request.param == "chrome":
+        options = webdriver.ChromeOptions()
+        # Additional Chrome options if needed
+        driver = webdriver.Chrome(options=options)
+    elif request.param == "firefox":
+        # Firefox setup
+        driver = webdriver.Firefox()
+    elif request.param == "edge":
+        # Edge setup
+        driver = webdriver.Edge()
+
+    yield driver
+    driver.quit()
+
+class TestCrossBrowser:
+    def test_example(self, driver):
+        # Your test code
+        driver.get("https://example.com")
+        assert "Example" in driver.title
+"""

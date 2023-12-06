@@ -35,3 +35,4 @@
 #map,filter,reduce,iterator diff generator
 
 #with open diff normal open, fie handling
+#os and time module

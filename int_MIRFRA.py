@@ -9,6 +9,18 @@
 #         B += i
 # print(B)
 
+
+# Input = "televisionei"
+# op = ''
+#
+# for i in Input:
+#     if i in op:
+#         op += '*'
+#     else:
+#         op += i
+# print(op)
+
+# B = ''
 # for i in Input:
 #     if i in B:
 #         B += "*"
@@ -38,7 +50,7 @@ Output:
 #     for j in range(i,0,-1):
 #         print(j, end="")
 #     print()
-
+#
 # try:
 #     result = 10/0
 # except ZeroDivisionError as error:

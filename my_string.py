@@ -1,5 +1,6 @@
 """1. Write a Python program to calculate the length of a string.
 """
+
 # A = "Avinash"
 # B = 0
 # for i in A:
@@ -33,6 +34,15 @@ Expected Result : Empty String"""
 #     print(string[0:2],string[-2:])
 # else:
 #     print("empty string")
+
+# def myfun(n):
+#
+#     if len(n) < 2:
+#         return "empty string"
+#     else:
+#         return n[:2],n[-2:]
+#
+# print(myfun('w'))
 
 """4. Write a Python program to get a string from a given string where all occurrences of its 
 first char have been changed to '$', except the first char itself.
@@ -251,6 +261,18 @@ if it contains at least 2 uppercase characters in the first 4 characters."""
 #     if i.upper() == i:
 #         B+=i
 # print(B)
+
+# A = 'Aviinash'
+
+# def myfun(n):
+#     for i in n:
+#         if i.upper() in n[:4]:
+#             print(n.upper())
+#             break
+#         else:
+#             print('nothing')
+#             break
+# myfun(A)
 
 """Write a Python program to check whether a string starts with specified characters.
 """

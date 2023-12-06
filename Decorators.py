@@ -57,7 +57,17 @@
 # obj = my_fun()
 # print(obj)
 
+# def decor(func):
+#     def wrapper(*args):
+#         result = func(*args)
+#         return result.upper()
+#     return wrapper
 #
+# @decor
+# def my_fun():
+#     return "hello"
+#
+# print(my_fun())
 #
 # """3) List and Dict Comprehansios"""
 # # list and dict comprehensions are concise and powerfull construct that allows to develove or
@@ -148,10 +158,10 @@
 #
 # print("-----------------------------------------")
 #
-# def name(**kwargs):
-#     print(kwargs)
-#
-# name(name="avi")
+def name(**kwargs):
+    print(kwargs)
+
+name(name="avi")
 #
 # print("-----------------------------------------")
 #

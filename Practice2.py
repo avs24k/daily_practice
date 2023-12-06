@@ -244,7 +244,7 @@ Test Data :
 # A = [1,2,4,5,"avinash","patil"]
 # B = "".join(str(B) for B in A)
 # print((B))
-#
+
 # def concatenate_list_elements(input_list):
 #     concatenated_string = "".join(str(element) for element in input_list)
 #     return concatenated_string
@@ -264,7 +264,6 @@ numbers = [
     815, 67, 104, 58, 512, 24, 892, 894, 767, 553, 81, 379, 843, 831, 445, 742, 717, 
     958,743, 527
     ]"""
-
 
 # def even_num(*numbers):
 #     for i in numbers:
@@ -368,7 +367,7 @@ equal or their sum or difference is 5."""
 
 """36. Write a Python program to add two objects if both objects are integers.
 """
-#my approach
+# my approach
 # def value(a,b):
 #     try:
 #         a = int(a)
@@ -532,7 +531,7 @@ and do nothing if the value is not equal."""
 # A.remove(A[0])
 # print(A)
 
-#second approach
+# second approach
 
 # def remove_first_item(input_list):
 #     if input_list:
@@ -574,7 +573,7 @@ and do nothing if the value is not equal."""
 
 
 """Method resolution order"""
-#1)
+# 1)
 # class A:
 #   def method(self):
 #     print("this is one")
@@ -711,5 +710,67 @@ from abc import ABC, abstractmethod
 #
 # values = [1, 2, 3]
 # my_function(*values)  # Equivalent to my_function(1, 2, 3)
+
+
+"""148. A Python list contains some positive integers.
+Write a Python program to count the numbers that are greater than the previous number on the list.
+([1, 4, 7, 9, 11, 5]) -> 4
+([1, 3, 3, 2, 2]) -> 1
+([4, 3, 2, 1]) -> 0
+"""
+
+# A = ([4, 3, 2, 1])
+# B = 0
+#
+# for i in range(len(A)-1):
+#     if A[i] < A[i+1]:
+#         B += 1
+#
+# print(B)
+
+"""147. A Python list contains three positive integers. 
+Write a Python program to check whether the sum of the digits in each number is equal or not. 
+Return true otherwise false.
+Sample Data:
+([13, 4, 22]) -> True
+([-13, 4, 22]) -> False
+([45, 63, 90]) -> True"""
+
+# A = ([13, 4, 22])
+#
+#
+# def myfun(n):
+#     return sum(int(i) for i in str(abs(n)))
+#
+#
+# def myfun2(m):
+#     check_equality = myfun(m[0])
+#
+#     for l in m[1:]:
+#         if check_equality != myfun(l):
+#             return False
+#     return True
+#
+#
+# print(myfun2([13, 4, -22]))
+"""------------------------------------------------------------------------------"""
+# def rest(nums):
+#     return nums[0] % 9 == nums[1] % 9 == nums[2] % 9
+# print(rest([13, 4, -22]))
+
+"""146. A Python list contains two positive integers. 
+Write a Python program to check whether the cube root of the first number is equal to the square root of 
+the second number.
+Sample Data:
+([8, 4]) -> True
+([64, 16]) -> True
+([64, 36]) -> False"""
+
+# A = [64, 36]
+#
+# if A[0]**2 == A[1]**3:
+#     print(True)
+# else:
+#     print(False)
 
 

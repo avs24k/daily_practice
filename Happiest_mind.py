@@ -5,11 +5,10 @@ Count number of 0's and 1's. get the count,
 # A = "0110100110011"
 # B = 0
 #
-# for i in range(1,len(A)):
-#     if A[i] != A[i-1]:
-#         B +=1
+# for i in range(1, len(A)):
+#     if A[i] != A[i - 1]:
+#         B += 1
 # print(B)
-
 
 # A = "0110100110011"
 # reversed_string = A[::-1]
@@ -54,14 +53,3 @@ Count number of 0's and 1's. get the count,
 #     if binary_string[i] != binary_string[i-1]:
 #         count_transitions += 1
 # print(count_transitions)
-
-
-
-
-
-
-
-
-
-
-

@@ -174,13 +174,13 @@ of the first and last 5 elements where the values are square numbers between 1 a
 """
 # A = ["a","S"]
 # B = "".join(A)
-# print(B)
+# print(type(B),B)
 
 """ 22. Write a Python program to find the index of an item in a specified list.
 """
 # A = [1, 2, 3, 4, 5]
-# # # # print(A.index(2))
-# # #
+# print(A.index(4))
+
 # B = []
 # for i in range(0,len(A)):
 #     if A[i]== 0:
@@ -205,6 +205,8 @@ o/p=[1, 2, 3, 4, 5, 'avi', 'B', 'C', 'd']
 # D = A + B
 # print(D)
 #
+
+
 # C = []
 # for i in A:
 #     C.append(i)
@@ -393,7 +395,6 @@ Expected Output: 113350"""
 
 """41.  String in Ascending Order"""
 
-
 # A = ["avi", "ramesh", "chama", "boutkar", "patil"]
 
 # for i in range(0,len(A)):
@@ -444,7 +445,6 @@ Additional values in second list: g,h"""
 """44. Write a Python program to generate groups of five consecutive numbers in a list.
 o/p=[[1,2,3,4,5],[6,7,8,9,10],[11,12,13,14,15]]
 """
-# B = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
 
 # A = [[i*5+j for j in range(1,6)] for i in range(5)]
 # print(A)
@@ -759,8 +759,8 @@ Flatten list:
 # print(B)
 
 
-
-"""73. Write a Python program to remove consecutive (following each other continuously) duplicates (elements) from a given list.
+"""73. Write a Python program to remove consecutive (following each other continuously) duplicates (elements) 
+from a given list.
 Original list:
 [0, 0, 1, 2, 3, 4, 4, 5, 6, 6, 6, 7, 8, 9, 4, 4]
 After removing consecutive duplicates:
@@ -803,37 +803,4 @@ List reflecting the run-length encoding from the said string:
 #         B[i]=1
 # print(B)
 #
-
-"""STRING"""
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -1,6 +1,6 @@
 """1. Write a Python script to sort (ascending and descending) a dictionary by value.
 """
-from collections import Counter
+# from collectorss import Counter
 
 # sample_dict = {'apple': 3, 'banana': 1, 'cherry': 2, 'date': 4}
 #
@@ -93,7 +93,7 @@ Sample Dictionary
 
 """12. Write a Python program to remove a key from a dictionary."""
 # B = {1: 1, 2: 4, 3: 9, 4: 16, 5: 25}
-#
+
 # if 2 in B:
 #     del B[2]
 # print(B)
@@ -315,10 +315,9 @@ item3 41.3"""
 """32. Write a Python program to print a dictionary line by line."""
 """Later"""
 
-# students = {'Aex': {'class':'V','rolld_id':2},
-#             'Puja': {'class':'V', 'roll_id':3}}
-#
-# for i in students:
-#     print(i)
-#     for j in students[i]:
-#         print(j,students[i][j])
+students = {'Aex': {'class':'V','rolld_id':2},
+            'Puja': {'class':'V', 'roll_id':3}}
+
+for i in students:
+    for j in students[i]:
+        print(j,students[i][j])
